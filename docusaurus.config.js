@@ -6,7 +6,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "지각생",
+  title: "지각생's Doc",
   tagline: "Dinosaurs are cool",
   url: "https://late90.netlify.app/",
   baseUrl: "/",
@@ -57,9 +57,9 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: "지각생",
+        title: "지각생's Doc",
         logo: {
-          alt: "지각생 Logo",
+          alt: "지각생's Doc Logo",
           src: "img/android-chrome-192x192.png",
         },
         items: [
@@ -71,6 +71,7 @@ const config = {
             label: "Documentation",
           },
           { to: "/blog", label: "Blog", position: "left" },
+          { to: "/project", label: "Project", position: "left" },
           {
             href: "https://github.com/latecomer32/Docusaurus",
             label: "GitHub",
@@ -108,8 +109,17 @@ const config = {
             title: "Docs",
             items: [
               {
-                label: "Documentation",
-                to: "/docs/intro",
+                label: "Past Version(2021)",
+                to: "https://latecomer32.github.io/web_world_latecomer/00_index",
+              },
+            ],
+          },
+          {
+            title: "지각생's Portfolio",
+            items: [
+              {
+                label: "Past Version(2022)",
+                to: "https://latecomer32.github.io/Portfolio/",
               },
             ],
           },
@@ -127,13 +137,33 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} 지각생, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} 지각생's Doc, Inc. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
       },
     }),
+  plugins: [
+    [
+      "@docusaurus/plugin-content-blog",
+      {
+        /**
+         * 멀티 인스턴스 플러그인 적용 시 필수값으로 설정해야 합니다.
+         */
+        id: "second-blog",
+        /**
+         * 사이트에서 블로그 연결 시 사용할 URL 경로를 설정합니다.
+         * *절대* URL 끝에 슬래시를 붙이지 마세요.
+         */
+        routeBasePath: "project",
+        /**
+         * 사이트 디렉터리 기준으로 상대 경로를 지정합니다.
+         */
+        path: "./project",
+      },
+    ],
+  ],
 };
 
 module.exports = config;
