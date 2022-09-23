@@ -6,7 +6,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "지각생's Doc",
+  title: "지각생",
   tagline: "Dinosaurs are cool",
   url: "https://late90.netlify.app/",
   baseUrl: "/",
@@ -57,9 +57,9 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: "지각생's Doc",
+        title: "지각생",
         logo: {
-          alt: "지각생's Doc Logo",
+          alt: "지각생 Logo",
           src: "img/android-chrome-192x192.png",
         },
         items: [
@@ -83,9 +83,9 @@ const config = {
         appId: "S1Z273DKRI",
 
         // 공개 API 키: 커밋해도 문제가 생기지 않습니다.
-        apiKey: "a0c1d10606ed7fc259f19aee077943cd",
+        apiKey: "78bb218ad08577172a81fc7f3e96c161",
 
-        indexName: "YOUR_INDEX_NAME",
+        indexName: "late90",
 
         // 옵션: 아래 문서를 참고
         contextualSearch: true,
@@ -127,7 +127,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} 지각생's Doc, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} 지각생, Inc. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
