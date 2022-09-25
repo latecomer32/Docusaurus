@@ -169,6 +169,12 @@ const config = {
         path: "./project",
       },
     ],
+    [
+      "docusaurus2-dotenv",
+      {
+        systemvars: true,
+      },
+    ],
   ],
   themes: ["@docusaurus/theme-live-codeblock"],
 };
