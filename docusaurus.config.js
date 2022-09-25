@@ -63,7 +63,7 @@ const config = {
           src: "img/android-chrome-192x192.png",
         },
         items: [
-          { type: "docsVersionDropdown" },
+          //{ type: "docsVersionDropdown" },
           {
             type: "doc",
             docId: "intro",
@@ -109,7 +109,7 @@ const config = {
             title: "Docs",
             items: [
               {
-                label: "Past Version(2021)",
+                label: "Last Versionersion(2021)",
                 to: "https://latecomer32.github.io/web_world_latecomer/00_index",
               },
             ],
@@ -118,7 +118,7 @@ const config = {
             title: "지각생's Portfolio",
             items: [
               {
-                label: "Past Version(2022)",
+                label: "Last Versionersion(2022)",
                 to: "https://latecomer32.github.io/Portfolio/",
               },
             ],
@@ -137,7 +137,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} 지각생's Doc, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} 지각생's Doc.`,
       },
       prism: {
         theme: lightCodeTheme,
