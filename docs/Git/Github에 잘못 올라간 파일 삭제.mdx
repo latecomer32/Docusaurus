@@ -1,0 +1,29 @@
+import CodeBlock from "@theme/CodeBlock";
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+## 원격 저장소에서 파일 삭제하기
+
+이미 github remote에 push를 했기 때문에 로컬의 저장소에서 파일을 삭제해도 원격 저장소에서는 삭제되지 않는다.
+따라서 아래와 같이 git rm –cached [File Name] 명령어를 이용하여 원격 저장소에서 잘못 올라간 파일을 삭제해야 한다.
+
+<Tabs>
+  <TabItem value="원격 저장소 파일 삭제" label="원격 저장소 파일 삭제" default>
+
+```
+// 파일 지정 삭제
+$ git rm --cached [File Name]
+
+// .idea 폴더 하위의 모든 파일 삭제
+$ git rm --cached -r .idea/
+```
+
+  </TabItem>
+  <TabItem value="원격+로컬 저장소 파일 삭제" label="원격+로컬 저장소 파일 삭제">
+
+```
+$ git rm [File Name]
+```
+
+  </TabItem>
+</Tabs>
