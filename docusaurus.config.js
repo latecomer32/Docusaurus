@@ -79,7 +79,7 @@ const config = {
           },
           { to: "/project", label: "Project", position: "left" },
           {
-            href: "https://github.com/latecomer32/Docusaurus",
+            href: "https://github.com/latecomer32",
             label: "GitHub",
             position: "right",
           },
@@ -138,7 +138,7 @@ const config = {
               },
               {
                 label: "GitHub",
-                href: "https://github.com/latecomer32/Docusaurus",
+                href: "https://github.com/latecomer32",
               },
             ],
           },
