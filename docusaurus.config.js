@@ -38,6 +38,7 @@ const config = {
           // Remove this to remove the "edit this page" links.
           editUrl:
             "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
+          exclude: ["00_exclude/**.{js,jsx,ts,tsx,md,mdx}"],
         },
         blog: {
           showReadingTime: true,
@@ -45,6 +46,7 @@ const config = {
           // Remove this to remove the "edit this page" links.
           editUrl:
             "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
+          exclude: ["00_exclude/**.{js,jsx,ts,tsx,md,mdx}"],
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
@@ -65,12 +67,16 @@ const config = {
         items: [
           //{ type: "docsVersionDropdown" },
           {
-            type: "doc",
-            docId: "intro",
+            to: "/docs",
+            //routeBasePath: '/'
             position: "left",
-            label: "Documentation",
+            label: "Docs",
           },
-          { to: "/blog", label: "Blog", position: "left" },
+          {
+            to: "/blog",
+            label: "Blog",
+            position: "left",
+          },
           { to: "/project", label: "Project", position: "left" },
           {
             href: "https://github.com/latecomer32/Docusaurus",
