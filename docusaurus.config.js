@@ -115,7 +115,7 @@ const config = {
             title: "Docs",
             items: [
               {
-                label: "Last Versionersion(2021)",
+                label: "Last Version(2021)",
                 to: "https://latecomer32.github.io/web_world_latecomer/00_index",
               },
             ],
@@ -124,7 +124,7 @@ const config = {
             title: "지각생's Portfolio",
             items: [
               {
-                label: "Last Versionersion(2022)",
+                label: "Last Version(2022)",
                 to: "https://latecomer32.github.io/Portfolio/",
               },
             ],
@@ -170,6 +170,7 @@ const config = {
       },
     ],
   ],
+  themes: ["@docusaurus/theme-live-codeblock"],
 };
 
 module.exports = config;
