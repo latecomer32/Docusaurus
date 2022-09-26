@@ -39,7 +39,7 @@ onAuthStateChanged(auth, (user) => {
     const uid = user.uid;
     if (user.uid !== "xnUWtpimJuMl4bQxM6qehHPclWf1") {
       alert("로그인 권한이 없습니다.");
-      logout();
+      logout(() => window.location.reload());
     }
 
     // ...
