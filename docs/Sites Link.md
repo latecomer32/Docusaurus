@@ -24,3 +24,7 @@ slug: /
 
 - https://ko.reactjs.org/docs/getting-started.html
 - https://developer.mozilla.org/ko/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/React_getting_started
+
+## pandas
+
+- https://pandas.pydata.org/docs/getting_started/intro_tutorials/01_table_oriented.html

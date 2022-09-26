@@ -5,8 +5,6 @@ import "../../css/login.css";
 import Loading from "../Loading";
 
 export default function ColorModeToggleWrapper(props) {
-  console.log("theme/color/index.js");
-
   const [userAuth, setUserAuth] = useState(null);
   const [authLoading, setAuthLoading] = useState(true);
 
@@ -51,7 +49,7 @@ export default function ColorModeToggleWrapper(props) {
           }}
           onClick={signInWithGoogle}
         >
-          Login
+          Login(Google)
         </button>
       )}
       <ColorModeToggle {...props} />

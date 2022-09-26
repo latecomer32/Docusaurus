@@ -9,8 +9,6 @@ import {
   onAuthStateChanged,
 } from "firebase/auth";
 
-console.log("theme/firebase.js");
-
 const app = firebase.initializeApp({
   apiKey: process.env.FIREBASE_API_KEY,
   authDomain: process.env.FIREBASE_AUTH_DOMAIN,
@@ -39,7 +37,11 @@ onAuthStateChanged(auth, (user) => {
     // User is signed in, see docs for a list of available properties
     // https://firebase.google.com/docs/reference/js/firebase.User
     const uid = user.uid;
-    console.log("theme/firebase uid::", uid);
+    if (user.uid !== "xnUWtpimJuMl4bQxM6qehHPclWf1") {
+      alert("로그인 권한이 없습니다.");
+      logout();
+    }
+
     // ...
   } else {
     // User is signed out
